@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.carousel-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.btn {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  position: absolute;
+  top: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(70%);
+}
+
+.btn-next {
+  right: 7%;
+}
+
+.btn-prev {
+  left: 7%;
+}
+
+.image-1 {
+  transform: translateX(0%);
+}
+
+.image-2 {
+  transform: translateX(100%);
+}
+
+.image-3 {
+  transform: translateX(200%);
+}
+
+.image-4 {
+  transform: translateX(200%);
+}
+
+.dots {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  display: flex;
+  column-gap: 25px;
+}
+
+.dots > div {
+  background-color: white;
+  padding: 4px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.dots > div:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}
